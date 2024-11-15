@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lightblue;">
+    <h1>Haga su reserva</h1>
+    <form action="procesareserva.php" method="get"> 
+        <fieldset> 
+            <legend>Datos Personales</legend> 
+          Nombre: 
+          <input type="text" name="nombre" value="" autofocus maxlength="100"><br> 
+          Apellidos: 
+          <input type="text" name="apellidos" value="" maxlength="100"><br> 
+          DNI: 
+          <input type="text" name="dni" value="" placeholder="DNI con letra" maxlength="10"><br>
+        </fieldset> 
+        <p>
+
+        </p>
+        <fieldset>
+            <legend>Datos de su estancia</legend>
+    
+          <p>
+            <label for="Individual">Individual:</label>
+            <input type="radio" value="I"  
+            id="Individual" name="habitación">
+            <label for="Doble">Doble:</label> 
+            <input type="radio" value="D"
+            id="doble" name="habitación">
+            <label for="Triple">Triple:</label> 
+            <input type="radio" value="T"
+            id="triple" name="habitación">
+        </p>
+
+        <p>
+            <label for="numpers">Número de personas:</label>
+            <select name="numpers" id="numpers">
+            <option value="1">1</option> 
+            <option value="2">2</option>
+            <option value="3">3</option>
+            </select>
+        </p>
+        <p>
+            <label for="Mascotas">Llevo mascotas</label>
+            <input type="checkbox" id="mascotas" name="mascotas">
+        </p>
+        <p>
+            <label for="date">Fecha de llegada</label>
+            <input type="date">
+            <p>
+
+            </p>
+            <label for="time">Hora de llegada</label>
+            <input type="time">
+        </p>
+    </fieldset>
+          <input type="submit" value="Enviar"> 
+          <input type="reset" value="Reiniciar">
+        </form>
+        <p><a href="index.html">VOLVER</a></p>
+</body>
+</html>
